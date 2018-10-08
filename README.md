@@ -1,5 +1,14 @@
 # webgame
+```
+    webgame (Web安全丛林之旅) 是Web类hacker闯关的游戏，以web技术为主要挑战项目。
 
+包含前端js,cookie,后端数据库中密码存储,密码加盐存储,用户代理判断和其它非web方面的技术。
+
+关卡有简入难
+
+    更多关卡正在研究中，欢迎提出您的意见或者建议。
+
+```
 ## 依赖版本：
  ├── Beego     : 1.9.2 <br>
  ├── GoVersion : go1.10
@@ -16,3 +25,12 @@
 ```
 ### linux & macOS 系统：
     参考 windows 系统
+
+## 系统截图
+
+   **闯关截图** <br>
+   <br>
+   ![](githubimage/1.png) <br>
+    **关卡完成截图** <br>
+      <br>
+   ![](githubimage/2.png)
