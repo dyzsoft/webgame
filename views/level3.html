@@ -1,0 +1,23 @@
+<div>
+    <p>是时候表演真正的技术了!!! ^_^  </p>
+
+    <form action="./" method="post">
+        <input type="password" name="password" id="password" >
+        <input type="submit" value="login" onclick="return loginCheck()">
+    </form>
+    <p>提示语：目前大部分网站采用了密码加密存储技术!
+        <span style="display: none;">MD5: 0192023a7bbd73250516f069df18b500 </span>
+    </p>
+
+    <script type="text/javascript">
+        function loginCheck() {
+            password = document.getElementById("password")
+            if (password.value === "" ) {
+                alert("ERROR:密码不能为空")
+                return false;
+            }
+            return true;
+        }
+    </script>
+</div>
+

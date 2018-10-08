@@ -1,0 +1,27 @@
+<div>
+
+    <p>密码我告诉你了，请开始你的表演... </p>
+
+    <form action="./" method="post">
+        <input type="text" name="password" id="password" >
+        <input type="submit" value="login" onclick="return loginCheck()">
+    </form>
+    <p>提示语：悄悄告诉你，密码是dyz123456
+        <span style="display: none;">  但是没这么简单...</span>
+    </p>
+
+    <script type="text/javascript">
+        function loginCheck() {
+            var  pass = document.getElementById("password").value;
+
+            if (pass === "" ){
+                alert("ERROR:密码不能为空！")
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+</div>
+

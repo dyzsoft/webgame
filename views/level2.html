@@ -1,0 +1,17 @@
+<div>
+    <p>输入正确的密码既可进入下一关^_^</p>
+
+    <form action="./" method="post">
+        <input type="password" name="password" id="password" >
+        <input type="submit" value="login" onclick="return loginCheck()">
+    </form>
+    <p>提示语：这讨厌的浏览器脚本，为什么阻止我？ </p>
+
+    <script type="text/javascript">
+        function loginCheck() {
+            alert("ERROR:  没这么简单的 ^_^ ， 密码错误！");
+            return false;
+        }
+    </script>
+</div>
+
