@@ -44,9 +44,6 @@
    **闯关截图** <br>
    <br>
    <br>
-   ![](githubimage/1.png) <br>
+   ![](githubimage/1.gif) <br>
    <br>
-    **关卡完成截图** <br>
-      <br>
-      <br>
-   ![](githubimage/2.png)
+   <br>
