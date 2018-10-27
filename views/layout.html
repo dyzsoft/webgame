@@ -1,33 +1,67 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
 
-    <title>Web安全丛林之旅-挑战的不仅仅是智商</title>
+    <title>Web安全丛林之旅-挑战的不仅仅是智商 </title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-    <style type="text/css">
-        body {padding:0px 20px;margin:0; font-size:14px; line-height:150%; background-color:#EEFBEC}
-        .header {text-align:right}
-    </style>
+    <link rel="stylesheet" type="text/css" href="/static/css/semantic.min.css">
 
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/semantic.min.js"></script>
 </head>
-<body>
+<body class="pushable">
 
-<div class="header">
-    <a href="/?method=restart" target="_top">重新开始(Restart)</a>
+<div class="pusher">
 
-    <a href="./" target="_top">游戏首页(Home)</a>  &nbsp;
+    <!--  pusher  -->
 
-    <a href="./" target="_blank">作者dyz </a>
+    <div class="ui inverted fixed  fluid  menu">
 
-    <span style="display: none"> 本程序灵感来自 ：http://www.fj543.com/hack/ 目前该站已经无法访问 原作者：fj543 </span>
+        <div class="right  menu">
+            <a class="item" href="/?method=restart" target="_top">重新开始(Restart)</a>
+            <a class="item" href="./" target="_top">游戏首页(Home)</a> &nbsp;
+            <a class="item" href="http://www.dyzsoft.com/" target="_blank">作者dyz </a>
+        </div>
+
+    </div>
+    <div class="ui  vertical  secondary very padded segment" style="height: 90%">
+
+        <div class="ui  container">
+
+            <h1 class="ui dividing header" style="margin-top: 2em;">Web安全丛林之旅—挑战的不仅仅是智商</h1>
+
+            <div class="ui segment">
+
+                <h2>现在是第 {{ .level }} 关(Level {{ .level }})</h2>
+
+                 {{.LayoutContent}}
+
+            </div>
+
+        </div>
+    </div>
+    <!-- footer  begin -->
+    <div class="ui secondary vertical segment" style="height: 10%">
+        <div class="ui container">
+            <div class="ui  grid">
+                <div class="center aligned row">
+                    <div class="column">
+                        Design by dyzsoft   &nbsp; | &nbsp;
+                        <a href="https://github.com/dyzsoft/webgame" > GitHub </a>
+                        &nbsp; | &nbsp;
+                        <a href="https://www.dyzsoft.com" > dyzsoft.com</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- end pusher  -->
+
 </div>
-<h1 style="color: black">Web安全丛林之旅——挑战的不仅仅是智商</h1>
-<hr>
-    <h2>现在是第 {{ .level }} 关(Level {{ .level }})</h2>
-
-    {{.LayoutContent}}
-
-<hr style="color: black">
+<span style="display: none"> 本程序灵感来自 ：http://www.fj543.com/hack/ 目前该站已经无法访问 原作者：fj543 </span>
 </body>
 </html>

@@ -2,8 +2,11 @@
     <p>输入正确的密码既可进入下一关^_^</p>
 
     <form action="./" method="post">
-        <input type="password" name="password" id="password" >
-        <input type="submit" value="login" onclick="return loginCheck()">
+        <div  class="ui input">
+            <input type="password" name="password" id="password" >
+        </div>
+
+        <input type="submit" value="login" onclick="return loginCheck()" class="ui primary button">
     </form>
     <p>提示语：这讨厌的浏览器脚本，为什么阻止我？ </p>
 

@@ -2,8 +2,11 @@
     <p>是时候表演真正的技术了!!! ^_^  </p>
 
     <form action="./" method="post">
-        <input type="password" name="password" id="password" >
-        <input type="submit" value="login" onclick="return loginCheck()">
+        <div class="ui  input">
+            <input type="password" name="password" id="password" >
+        </div>
+
+        <input type="submit" value="login" onclick="return loginCheck()" class="ui primary button">
     </form>
     <p>提示语：目前大部分网站采用了密码加密存储技术!
         <span style="display: none;">MD5: 0192023a7bbd73250516f069df18b500 </span>

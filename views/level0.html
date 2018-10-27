@@ -1,11 +1,16 @@
 <div>
 
-    <p>小试牛刀:  1 + 1 = 2 ，输入正确既可过关</p>
+    <p>小试牛刀:  1 + 1 = ? ，输入正确既可过关</p>
 
-    <form action="./" method="post">
-        <input type="text" name="password" id="password"  onblur="return loginCheck()" >
-        <input type="submit" value="come on" onclick="return loginCheck()">
+    <form action="./" method="post" >
+        <div class="ui input">
+            <input type="text" name="password" id="password"  onblur="return loginCheck()" >
+        </div>
+        <input type="submit" value="come on"   onclick="return loginCheck()"  class="ui primary button">
+
     </form>
+
+
     <p>提示语：突破一下浏览器端脚本验证。</p>
 
     <script type="text/javascript">
@@ -15,5 +20,6 @@
             return false;
         }
     </script>
+
 </div>
 

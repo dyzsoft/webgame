@@ -1,6 +1,6 @@
 <div>
 
-        <h3 style="color: #000000">  {{ .message }} </h3>
+       <h2 style="color: #000000">  {{ .message }} </h2>
 
        <p style="font-size: 16px"> <span id="times"> 3 </span> 秒钟后将自动跳转  <span id="wait"> .</span> </p>
 
@@ -8,9 +8,7 @@
 
          let times = document.getElementById("times");
          let wait = document.getElementById("wait");
-
         setInterval(function () {
-
             timevalue = times.innerText;
             times.innerText =(parseInt(timevalue)- 1 )+ "";
             wait .innerText = wait.innerText + "..."

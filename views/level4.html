@@ -2,8 +2,11 @@
     <p> 是时候表演真正的技术了!!!   ^_^ , 请开始你的表演</p>
 
     <form action="./" method="post">
-        <input type="password" name="password" id="password" >
-        <input type="submit" value="login" onclick="return loginCheck()">
+        <div class="ui input">
+            <input type="password" name="password" id="password" >
+        </div>
+
+        <input type="submit" value="login" onclick="return loginCheck()" class="ui primary button">
     </form>
     <p>提示语：味道不够重 ？ 加了点盐在后面 O(∩_∩)O ~~ 密码最常见的5个字符吗，很简单
         <span style="display: none;"> MD5: 6ddd502c96cdca7b63037bdd3441e783 , Salt:dyz </span>
